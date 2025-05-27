@@ -1,0 +1,7 @@
+datasets
+sentence-transformers
+torch
+faiss-cpu
+openai
+streamlit
+ragas
