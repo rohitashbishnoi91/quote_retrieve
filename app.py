@@ -17,14 +17,14 @@ if query:
         st.markdown("### 📝 Answer")
         st.success(answer)
         st.markdown("### 📚 Retrieved Quotes")
-        for i, quote in enumerate(sources):
-            st.markdown(
-                f"""
-                <div style="background-color:#f0f2f6;padding:10px;border-radius:8px;margin-bottom:8px;">
-                <b>{i+1}.</b> {quote}
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+    for i, quote in enumerate(sources):
+        st.markdown(
+            f"""
+            <div style="background-color:#fff9db;color:#222;padding:10px;border-radius:8px;margin-bottom:8px;">
+            <b>{i+1}.</b> {quote}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 else:
     st.info("Type your query above to get started!")
